@@ -111,7 +111,7 @@ adjustWeights <- function(w, a, target) {
 
 # Use centroid finding code in 'soiltexture' for now
 # May be able to find a better source later (?)
-library(soiltexture)
+# library(soiltexture)
 shiftSites <- function(s, k) {
     newSites <- mapply(function(poly, x, y) {
                            # Handle empty polygons
