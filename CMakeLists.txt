@@ -1,7 +1,7 @@
 # Created by the script cgal_create_CMakeLists
 # This is the CMake script for compiling a set of CGAL applications.
 
-project( executable )
+project( voronoiDiagram )
 
 
 cmake_minimum_required(VERSION 2.8.11)
@@ -36,13 +36,13 @@ endif()
 # include for local package
 
 
-# Creating entries for target: executable
+# Creating entries for target: voronoiDiagram
 # ############################
 
-add_executable( executable  voronoiDiagram.cpp )
+add_executable( voronoiDiagram  voronoiDiagram.cpp )
 
-add_to_cached_list( CGAL_EXECUTABLE_TARGETS executable )
+add_to_cached_list( CGAL_EXECUTABLE_TARGETS voronoiDiagram )
 
 # Link the executable to CGAL and third-party libraries
-target_link_libraries(executable   ${CGAL_LIBRARIES} ${CGAL_3RD_PARTY_LIBRARIES} )
+target_link_libraries(voronoiDiagram   ${CGAL_LIBRARIES} ${CGAL_3RD_PARTY_LIBRARIES} )
 

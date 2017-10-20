@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named executable
+# Target rules for targets named voronoiDiagram
 
 # Build rule for target.
-executable: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 executable
-.PHONY : executable
+voronoiDiagram: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 voronoiDiagram
+.PHONY : voronoiDiagram
 
 # fast build rule for target.
-executable/fast:
-	$(MAKE) -f CMakeFiles/executable.dir/build.make CMakeFiles/executable.dir/build
-.PHONY : executable/fast
+voronoiDiagram/fast:
+	$(MAKE) -f CMakeFiles/voronoiDiagram.dir/build.make CMakeFiles/voronoiDiagram.dir/build
+.PHONY : voronoiDiagram/fast
 
 voronoiDiagram.o: voronoiDiagram.cpp.o
 
@@ -129,7 +129,7 @@ voronoiDiagram.o: voronoiDiagram.cpp.o
 
 # target to build an object file
 voronoiDiagram.cpp.o:
-	$(MAKE) -f CMakeFiles/executable.dir/build.make CMakeFiles/executable.dir/voronoiDiagram.cpp.o
+	$(MAKE) -f CMakeFiles/voronoiDiagram.dir/build.make CMakeFiles/voronoiDiagram.dir/voronoiDiagram.cpp.o
 .PHONY : voronoiDiagram.cpp.o
 
 voronoiDiagram.i: voronoiDiagram.cpp.i
@@ -138,7 +138,7 @@ voronoiDiagram.i: voronoiDiagram.cpp.i
 
 # target to preprocess a source file
 voronoiDiagram.cpp.i:
-	$(MAKE) -f CMakeFiles/executable.dir/build.make CMakeFiles/executable.dir/voronoiDiagram.cpp.i
+	$(MAKE) -f CMakeFiles/voronoiDiagram.dir/build.make CMakeFiles/voronoiDiagram.dir/voronoiDiagram.cpp.i
 .PHONY : voronoiDiagram.cpp.i
 
 voronoiDiagram.s: voronoiDiagram.cpp.s
@@ -147,7 +147,7 @@ voronoiDiagram.s: voronoiDiagram.cpp.s
 
 # target to generate assembly for a file
 voronoiDiagram.cpp.s:
-	$(MAKE) -f CMakeFiles/executable.dir/build.make CMakeFiles/executable.dir/voronoiDiagram.cpp.s
+	$(MAKE) -f CMakeFiles/voronoiDiagram.dir/build.make CMakeFiles/voronoiDiagram.dir/voronoiDiagram.cpp.s
 .PHONY : voronoiDiagram.cpp.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... executable"
+	@echo "... voronoiDiagram"
 	@echo "... voronoiDiagram.o"
 	@echo "... voronoiDiagram.i"
 	@echo "... voronoiDiagram.s"
