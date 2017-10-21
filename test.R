@@ -14,6 +14,7 @@ box()
 par(mar=oldMar)
 
 # source stuff
+rm(list=ls());gc()
 scale <- 1000
 setwd("/Users/slwu89/Desktop/git/voronoi")
 source("allocate.R")
@@ -43,9 +44,9 @@ par(mar=oldMar)
 
 temp <- seq(.1, .9, length=n)
 target <- temp/sum(temp)
-treemap <- allocate(as.character(1:n), 
-                      list(x=x, y=y), 
-                      w, unitSquare, target,debug = TRUE)
+treemap <- allocate(names = as.character(1:n), 
+                      s = list(x=x, y=y), 
+                      w = w, outer = unitSquare, target = target, maxIteration = 1,debug = TRUE)
 drawRegions(treemap, label=TRUE)
 
 area <- unlist(treemap$a)
